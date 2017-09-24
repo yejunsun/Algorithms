@@ -5,8 +5,8 @@
 - 一周坚持学完一周的东西，如果学不完，直接放弃，开始下一周学习, 如果一直放弃，就干脆放弃这个的学习
 
 ## TODO
-- [x] 看到第五个视频
-- [] 代码 quick-find quick-union weighted QU , QU + path compression, weighted QU + path compression
+- [x] 继续看第13个视频,上周任务已完成
+- []
 
 ## 课表
 - 1
