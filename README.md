@@ -5,8 +5,9 @@
 - 一周坚持学完一周的东西，如果学不完，直接放弃，开始下一周学习, 如果一直放弃，就干脆放弃这个的学习
 
 ## TODO
-- [x] 继续看第13个视频,上周任务已完成
-- []
+- [x] 继续看第17个视频,上周任务已完成
+- [] 用linkedList 实现 stack，  用array实现fixedStringofStack
+- [] 实现可以resize的 基于array的 queue 和 基于 linkedlist 的queue
 
 ## 课表
 - 1
