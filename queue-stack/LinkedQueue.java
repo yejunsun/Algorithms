@@ -3,17 +3,12 @@ import java.util.NoSuchElementException;
 
 /**
  * @author sunyejun
- * @date 2017-09-27
+ * @date 2017-09-28
  * @Description
  */
-public class LinkedStack<Item> implements Iterable<Item> {
+public class LinkedQueue<Item> implements Iterable<Item>{
 
-    private Node first = null;
-
-    private class Node{
-        public Item item;
-        public Node next;
-    }
+    private Node first,last;
 
     @Override
     public Iterator<Item> iterator() {
@@ -42,23 +37,36 @@ public class LinkedStack<Item> implements Iterable<Item> {
         }
     }
 
+
+    private class Node{
+        public Item item;
+        public Node next;
+    }
+
     public boolean isEmpty() {
         return first == null;
     }
 
-    public Item pop() {
+    public Item dequeue() {
         if (first == null) {
             throw new NoSuchElementException();
         }
         Item item = first.item;
         first = first.next;
+        if (isEmpty()) {
+            last = null;
+        }
         return item;
     }
 
-    public void push(Item item) {
-        Node oldFirst = first;
-        first = new Node();
-        first.item = item;
-        first.next = oldFirst;
+    public void enqueue(Item item) {
+        Node oldLast = last;
+        last = new Node();
+        last.item = item;
+        if (isEmpty()) {
+            oldLast.next = last;
+        } else {
+            first = last;
+        }
     }
 }
